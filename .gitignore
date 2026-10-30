@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Generated artifacts
+*.log
+*.tmp
+
+# Experiment results.
+#
+# Generated result directories are NOT committed by default. We keep the
+# directory itself (via .gitkeep) so the layout is visible in the repo.
+#
+# To commit a specific experiment run (e.g. a published negative result),
+# use `git add -f results/<path>`.
+results/*
+!results/.gitkeep
+
+# But always keep the per-run .gitkeep markers if present.
+!results/**/.gitkeep
+
+# Research ground-truth exports are large and must never be committed
+# accidentally.
+researcher_ground_truth.json
+*researcher_ground_truth.json
+*.blend1
+
